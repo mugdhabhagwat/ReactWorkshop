@@ -2,6 +2,7 @@ import React, {Component, Fragment} from 'react';
 import './SideBarComponent.css';
 import './api.js';
 import LinkComponent from './LinkComponent';
+import NameFormComponent from './NameFormComponent';
 
 /*class SideBarComponent extends Component{
     render(){
@@ -43,7 +44,8 @@ class SideBarComponent extends Component{
                 <p>Important Links</p>
                 <ul>
                     {linkContainer}
-                </ul>                
+                </ul>
+                <NameFormComponent></NameFormComponent>                
             </Fragment>
         )};
 }

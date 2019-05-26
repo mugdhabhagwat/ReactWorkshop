@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 export default class LinkComponent extends Component{
     constructor(props){
         super(props);
-        this.gotClicked = this.gotClicked.bind(this);
-        this.gotPointerMove = this.gotPointerMove.bind(this);
         this.state = {
             visited:false
         }
+        this.gotClicked = this.gotClicked.bind(this);
+        this.gotPointerMove = this.gotPointerMove.bind(this);
     }
 
     gotClicked(event){
