@@ -24,7 +24,7 @@ import LinkComponent from './LinkComponent';
     }
 */
 
-class SideBarComponent extends Component{
+export default class SideBarComponent extends Component{
     componentDidMount(){
         console.log("SideBarComponent mount");
     }
@@ -35,7 +35,7 @@ class SideBarComponent extends Component{
         if(this.props.urlList)//OR this.props.urlList.length>0
         { 
             this.props.urlList.forEach((value, key) => {
-                linkContainer.push(<li key={key}><LinkComponent urlColor={value.urlColor} apiUrl={value.apiUrl} urlName={value.urlName}></LinkComponent></li>);
+                linkContainer.push(<li key={key}><LinkComponent urlColor={value.} apiUrl={value.apiUrl} urlName={value.urlName}></LinkComponent></li>);
             });
         }
         return(
@@ -47,5 +47,3 @@ class SideBarComponent extends Component{
             </Fragment>
         )};
 }
-
-export default SideBarComponent;
