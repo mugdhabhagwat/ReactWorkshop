@@ -1,8 +1,9 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component, Fragment, lazy, Suspense} from 'react';
 import './SideBarComponent.css';
 import './api.js';
 import LinkComponent from './LinkComponent';
 import NameFormComponent from './NameFormComponent';
+// const NameFormComponent = lazy(() => import('./NameFormComponent'));
 
 /*class SideBarComponent extends Component{
     render(){
@@ -45,7 +46,10 @@ class SideBarComponent extends Component{
                 <ul>
                     {linkContainer}
                 </ul>
-                <NameFormComponent></NameFormComponent>                
+                {/* <Suspense fallback={<div>Loading.....</div>}>
+                    <NameFormComponent/>
+                </Suspense>           */}
+                <NameFormComponent/>
             </Fragment>
         )};
 }
